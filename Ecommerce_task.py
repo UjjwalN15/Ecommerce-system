@@ -302,7 +302,7 @@ def seller_view_bills(username):
             dict_file_existing_data = json.loads(datas)
             if dict_file_existing_data.get("Seller") == username:
                 # print("-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------")
-                data = [(list_file_existing_data.index(datas)+1,dict_file_existing_data.get('Name'),dict_file_existing_data.get("Model"),dict_file_existing_data.get("Price"),dict_file_existing_data.get("Seller"),int(dict_file_existing_data.get("Price")))]           # print("Product No: ", list_purchased_item_data.index(datas))
+                data = [(list_file_existing_data.index(datas),dict_file_existing_data.get('Name'),dict_file_existing_data.get("Model"),dict_file_existing_data.get("Price"),dict_file_existing_data.get("Seller"),int(dict_file_existing_data.get("Price")))]           # print("Product No: ", list_purchased_item_data.index(datas))
                 # print("Product Name: " , dict_purchased_item_data.get('Name'))
                 # print("Product Model: " , dict_purchased_item_data.get('Model'))
                 # print("Product Price: " , dict_purchased_item_data.get('Price'))
