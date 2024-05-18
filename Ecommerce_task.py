@@ -183,7 +183,7 @@ def buyer_purchase_product():
             file = open("C:/Users/prajw/OneDrive/Desktop/Python Programming/Ecommerce_Task/Buyer_purchase.txt","a")
             file.write(json_purchased_item_data + "-")
             file.close()
-            print(f"The item on the index {index} has been purchased successfully.")
+            print(f"{purchase_quantity} pieces of {dict_product_data.get("Name")} has been purchased successfully.")
 
     
 def buyer_view_bills():
